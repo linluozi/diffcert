@@ -38,12 +38,15 @@ first-class, hashed artefact:
 ## Install
 
 ```bash
-pip install .        # from this checkout
+pip install --no-cache-dir .
 # or, editable:
-pip install -e .
+pip install --no-cache-dir -e .
 ```
 
-No third-party dependencies. Python >= 3.9 (developed and tested on CPython 3.12.3).
+`--no-cache-dir` keeps the build working in containers/sandboxes where the
+default `~/.cache/pip` is not writable; plain `pip install .` also works when
+that cache is writable. No third-party dependencies. Python >= 3.9 (developed
+and tested on CPython 3.12.3).
 
 ## Quick start
 
@@ -135,7 +138,7 @@ speedup claim). The measurable claims above are covered by:
 ## Reproduce in three commands
 
 ```bash
-pip install .
+pip install --no-cache-dir .
 python -m unittest discover -s tests -v
 python -m diffcert demo --write results
 ```
