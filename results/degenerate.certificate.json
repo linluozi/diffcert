@@ -1,0 +1,21 @@
+{
+  "attempts": 2000,
+  "certificate_sha256": "65d1397798c04b10aa9c663630f074ca9a9f3e05d12b60ac148d3959338810b8",
+  "degenerate": true,
+  "degenerate_threshold": 0.5,
+  "duplicate_rate": 0.9995,
+  "env": {
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "impl_a": "sum",
+  "impl_b": "sum",
+  "mismatch_count": 0,
+  "mismatches": [],
+  "normalization_counts": {},
+  "normalize": true,
+  "passed": false,
+  "unique_inputs": 1
+}

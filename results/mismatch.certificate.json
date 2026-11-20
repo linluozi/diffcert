@@ -1,0 +1,86 @@
+{
+  "attempts": 5,
+  "certificate_sha256": "4d1b5f68e25d20ed78deaeac9c74df280ff49f64b0ac62d083b845b6830e6d44",
+  "degenerate": false,
+  "degenerate_threshold": 0.5,
+  "duplicate_rate": 0.0,
+  "env": {
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "impl_a": "upper",
+  "impl_b": "lower",
+  "mismatch_count": 4,
+  "mismatches": [
+    {
+      "case_digest": "3fa5834dc920d385ca9b099c9fe55dcca163a6b256a261f8f147291b0e7cf633",
+      "case_repr": "'d'",
+      "normalized": {},
+      "original_case_repr": "'Hello World'",
+      "out_a": {
+        "returned": "D"
+      },
+      "out_a_sha256": "b34f0367e1e4b00f99fedfa014481e2122b3a57ba04750b2351ddd34b22b48f9",
+      "out_b": {
+        "returned": "d"
+      },
+      "out_b_sha256": "c511c74f4f1f307d9ce12c48384f8c8d0506e67ca88869241a5a0581415402a4",
+      "shrink_evals": 3,
+      "shrunk": true
+    },
+    {
+      "case_digest": "879923da020d1533f4d8e921ea7bac61e8ba41d3c89d17a4d14e3a89c6780d5d",
+      "case_repr": "'c'",
+      "normalized": {},
+      "original_case_repr": "'abc'",
+      "out_a": {
+        "returned": "C"
+      },
+      "out_a_sha256": "aebb8d64777f5b05b7fe8e7aa9e69efa839de89c1121e31087d63af513bb13db",
+      "out_b": {
+        "returned": "c"
+      },
+      "out_b_sha256": "74b4d995c12214ee4462c9a1a336dafa6ebbcde66a1e6c6cbf75e120d294b579",
+      "shrink_evals": 1,
+      "shrunk": true
+    },
+    {
+      "case_digest": "8c8656c5d114d7f8b2a412d2d5fd03accce3ed050624a0493734591a9666b110",
+      "case_repr": "'e'",
+      "normalized": {},
+      "original_case_repr": "'MixedCase'",
+      "out_a": {
+        "returned": "E"
+      },
+      "out_a_sha256": "70cfa3ab751c475de549e4631a1ea1809a61b782c63643c9490135b465e8405a",
+      "out_b": {
+        "returned": "e"
+      },
+      "out_b_sha256": "b09850c8eac93ddd0a1ae93b23f3b7a2e31cf90802eaf83217009f4552518de5",
+      "shrink_evals": 3,
+      "shrunk": true
+    },
+    {
+      "case_digest": "8ca5d81566f88badd698137ac629cbf93ccc107c0cd967b7964f7d82088f6ebf",
+      "case_repr": "'t'",
+      "normalized": {},
+      "original_case_repr": "'ZZZ and more text'",
+      "out_a": {
+        "returned": "T"
+      },
+      "out_a_sha256": "c574f42dadf9583999875d268249ae05b16bd8c853330a250b6468ff667d86ea",
+      "out_b": {
+        "returned": "t"
+      },
+      "out_b_sha256": "c64a348a409bedf32ccaabdfa65a0b3c8f3995223c1912eea84e04a7483b1ac8",
+      "shrink_evals": 4,
+      "shrunk": true
+    }
+  ],
+  "normalization_counts": {},
+  "normalize": true,
+  "passed": false,
+  "unique_inputs": 5
+}
